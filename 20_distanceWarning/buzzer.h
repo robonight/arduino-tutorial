@@ -8,15 +8,15 @@ class Buzzer {
       pinMode(pin, OUTPUT);
     }
 
-    void warn() {
+    void warn() const {
       tone(pin, 261);
     }
 
-    void error() {
+    void error() const {
       tone(pin, 277);
     }
 
-    void ok() {
+    void ok() const {
       noTone(pin);
     }
   
